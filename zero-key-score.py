@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 
-try:
-	import pyxhook, pyperclip
-except:
-	print('Please install pyxhook and pyperclip packages!')
-	exit(0)
-
 import os
 import time
+import pyxhook
 import datetime
+import pyperclip
 import multiprocessing
 
 
