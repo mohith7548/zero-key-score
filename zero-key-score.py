@@ -125,7 +125,6 @@ def post_form():
 
 def initialize_files():
 	global keys_lock, clip_lock
-
 	# Lock variable for accessing files
 	keys_lock = multiprocessing.Lock()
 	clip_lock = multiprocessing.Lock()
