@@ -88,6 +88,6 @@ Functions in this script:
 
   6. Note that the log files are created in the `\tmp` directory in order not to be suspicious. Because, `\tmp` files are deleted after every reboot.
 
-  6. Nextly, `p3` waits for `wait_time_to_post` and then posts the content of `logs_keys_file` and `log_clip_file` to the `google_form_url`. And repeats itself.
+  7. Nextly, `p3` waits for `wait_time_to_post` and then posts the content of `logs_keys_file` and `log_clip_file` to the `google_form_url`. And repeats itself.
 
-  7. The Program never stops by itself. You can terminate the program by pressing `CTRL+C` in the terminal.
+  8. The Program never stops by itself. You can terminate the program by pressing `CTRL+C` in the terminal.
