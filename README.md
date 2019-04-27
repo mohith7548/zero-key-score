@@ -1,11 +1,25 @@
 # zero-key-score
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
+
+[My Website](https://kunemohith.github.io)
+
+<a href="https://www.buymeacoffee.com/kunemohith" target="\_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ## Intro
-zero-key-score is a keylogger purely made for security and educational purposes.
+Welcome to the zero-key-score repository! A Python3 program that records your keystrokes and the clipboard, and this program saves them in log files in `/tmp` folder on your local computer. And periodically posts them to a Google form for post analysis purposes.
 
-[NOTE] This project uses python3.
+Check out below to learn how to install them. The zero-key-score is besides being simple and handy it also works like charm! Feel free to fork and improve it if you want. Be sure to check out the issues or pull requests to see if your problem has been fixed, or to help out others.
 
+Please Star and Share the Repo if it helped you!
 
+I strongly believe this,
+> “Information should be free”. <br>
+-One of the principles of Hacking
+
+[NOTE] This project uses python3<br>
+[NOTE] This projects works on Linux only.
+
+---
 ## Instructions to use
 This project has two major dependencies.
   1. pyxhook
@@ -49,6 +63,7 @@ Conversely, you can also run the program without making it as an executable.
 python3 zero-key-score.py
 ```
 
+---
 ## How the Script works?
 Variables in this script:
   1. `logs_keys_file` stores the captures keys into it.
@@ -86,7 +101,7 @@ Functions in this script:
 
   5. Secondly, `p2` reads the copied content from the clipboard and writes into the `log_clip_file`. And then sleeps for `wait_time_to_listen_clip` seconds before repeating itself again.
 
-  6. Note that the log files are created in the `\tmp` directory in order not to be suspicious. Because, `\tmp` files are deleted after every reboot.
+  6. Note that the log files are created in the `/tmp` directory in order not to be suspicious. Because, `/tmp` files are deleted after every reboot.
 
   7. Nextly, `p3` waits for `wait_time_to_post` and then posts the content of `logs_keys_file` and `log_clip_file` to the `google_form_url`. And repeats itself.
 
