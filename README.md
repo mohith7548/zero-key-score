@@ -15,8 +15,8 @@ Check out below to learn how to install them. The zero-key-score is besides bein
 Please Star and Share the Repo if it helped you!
 
 I strongly believe this,
-> “Information should be free”. <br>
--One of the principles of Hacking
+> “*Information should be free”. <br>
+-One of the principles of Hacking*
 
 [NOTE] This project uses python3<br>
 [NOTE] This projects works on Linux only.
