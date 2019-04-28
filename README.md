@@ -6,7 +6,7 @@
 
 #### Show some :heart: and star the repo to support the project
 
-##### Youtube Video link: [![watch](image/youtube.png)](https://www.youtube.com/watch?v=HZDWXQQlgcs)
+##### Youtube Video link: [watch](https://www.youtube.com/watch?v=HZDWXQQlgcs)
 
 ##### My Website link: [My Website](https://kunemohith.github.io)
 
