@@ -52,6 +52,10 @@ There are few things to be changed in the ```src/zero-key-score.py``` file accor
   ```python3
   google_form_url = <New Form URL>
   ```
+    [NOTE] When you create a new Google form the url will look like `https://docs.google.com/forms/d/e/<random_chars_and_numbers>/viewform`.
+    But, the url must look like `https://docs.google.com/forms/d/e/<random_chars_and_numbers>/formResponse`.
+    The `viewform` should be replcaced with `formResponse`.
+    
   2. Change the time to wait before posting to google form
   ```python3
   wait_time_to_post = <new time>
