@@ -34,6 +34,11 @@ pip3 install -r requirements.txt
 ```
 You may need to run the above command with ```sudo``` depending on the permissions the user permissions.
 
+[NOTE] If the `pyperclip` doesn't work on your distro do this,
+```bash
+sudo apt install xsel
+```
+
 There are few things to be changed in the ```src/zero-key-score.py``` file according to your needs.
   1. Change Google Form URL. Visit the example url in program and create similar one.
   ```python3
