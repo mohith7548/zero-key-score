@@ -1,11 +1,19 @@
 # zero-key-score
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
 
-[My Website](https://kunemohith.github.io)
 
-If you like the repository, support the Developer by staring the repo and buying me a Coffee<br>
+![Image](images/Zero-Key-Score.png)
 
-<a href="https://www.buymeacoffee.com/kunemohith" target="\_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+#### Show some :heart: and star the repo to support the project
+
+##### Youtube Video link: [![watch](image/youtube.png)](https://www.youtube.com/watch?v=HZDWXQQlgcs)
+
+##### My Website link: [My Website](https://kunemohith.github.io)
+
+<!-- If you like the repository, support the Developer by staring the repo and buying me a Coffee<br>
+
+<a href="https://www.buymeacoffee.com/kunemohith" target="\_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> -->
+
 
 ## Intro
 Welcome to the zero-key-score repository! A Python3 program that records your keystrokes and the clipboard, and this program saves them in log files in `/tmp` folder on your local computer. And periodically posts them to a Google form for post analysis purposes.
