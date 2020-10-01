@@ -8,8 +8,6 @@
 
 ##### Youtube Video link: [watch](https://www.youtube.com/watch?v=HZDWXQQlgcs)
 
-##### My Website link: [My Website](https://kunemohith.github.io)
-
 <!-- If you like the repository, support the Developer by staring the repo and buying me a Coffee<br>
 
 <a href="https://www.buymeacoffee.com/kunemohith" target="\_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> -->
